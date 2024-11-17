@@ -83,7 +83,7 @@ print(message_part2)
 
 ### **Part 3: Similar Primes**
 
-**Insight:** The spy used primes \(p\) and \(q\) that are very close in value. This allows us to factor \(n\) by solving a simple quadratic equation.
+**Insight:** The spy used primes \(p\) and \(q\) that are equal in value. This allows us to factor \(n\) by solving a simple quadratic equation.
 
 **Solution**: We can use the square root approximation to find \(p\) and \(q\), since \(p\) and \(q\) are very close to each other. We can then factor \(n\) and decrypt the message.
 
@@ -109,11 +109,11 @@ print(part3_flag)
 
 ### **Part 4: \(n = p\)**
 
-**Insight:** For this part, \(n\) is a prime number, meaning \(p = n\). This simplifies decryption as \(\phi(n) = n - 1\).
+**Insight:** For this part, \(n\) is equal to p . This simplifies decryption as \(phi = n - 1\).
 
 Steps to solve:
-1. Calculate \(\phi(n) = n - 1\).
-2. Compute \(d\) as the modular inverse of \(e\) modulo \(\phi(n)\).
+1. Calculate \(phi(n) = p - 1\).
+2. Compute \(d\) as the modular inverse of \(e\) modulo \(phi\).
 3. Decrypt the ciphertext.
 
 ```python
