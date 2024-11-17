@@ -81,11 +81,11 @@ print(message_part2)
 
 ---
 
-### **Part 3: Similar Primes**
+### **Part 3: Same Primes**
 
-**Insight:** The spy used primes \(p\) and \(q\) that are equal in value. This allows us to factor \(n\) by solving a simple quadratic equation.
+**Insight:** The spy used primes \(p\) and \(q\) that are the same. This allows us to factor \(n\) by solving a simple quadratic equation.
 
-**Solution**: We can use the square root approximation to find \(p\) and \(q\), since \(p\) and \(q\) are very close to each other. We can then factor \(n\) and decrypt the message.
+**Solution**: We can use the square root approximation to find \(p\) and \(q\), since \(p\) and \(q\) are the same. We can then factor \(n\) and decrypt the message.
 
 ```python
 from Crypto.Util.number import inverse, long_to_bytes, isPrime
